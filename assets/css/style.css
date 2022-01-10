@@ -1,0 +1,299 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:silver;
+    position: absolute;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-size: 200%;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 160%;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 120%;
+    line-height: 1.5;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    background-color:#ff9c9c;
+    color:rgb(37, 33, 33);
+    border-bottom: 8px rgb(37, 33, 33) solid;
+    padding: 8px;
+}
+
+header img:hover {
+    animation: bounce 1s;
+}
+
+#logo-and-menu {
+    display: flex;
+    flex-direction:row;
+    width: 40%;
+    align-content: center;
+    padding-left: 30px;
+    align-self: center;
+    align-content: center;
+}
+
+#toplogo {
+    height: 50px;
+    width: 60px;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    align-self: center;
+    justify-content: end;
+    padding-right: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-self: right;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+nav ul li {
+    padding-inline: 10px;
+}
+
+nav a {
+    color:rgb(37, 33, 33);
+    background-color: lightgray;
+}
+
+nav a:hover {
+    color: #ff9c9c;
+    background-color: rgb(37, 33, 33)
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+#bumper {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+#patrickheadshot {
+    height: 200px;
+    width: 200px;
+}
+
+#allitems {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px;
+    justify-self: center;
+    justify-content: center;
+}
+
+.itemtitle {
+    width:30%;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 8px #ff9c9c;
+    border-right-style: groove;
+}
+
+.itemcontent {
+    width: 70%;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 4px rgb(37, 33, 33);
+    border-left-style: ridge;
+}
+
+#allthecards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#allthecards a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 2 300px;
+    height: 300px;
+    background-color: lightslategrey;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.cardmain {
+    flex-basis: 600px;
+}
+
+.card h3 {
+    background-color: rgb(37, 33, 33);
+    color: #ff9c9c;
+    position: relative;
+    margin-top: 225px;
+    padding: 3px;
+    width: 90%;
+}
+
+.card p {
+    background-color: #ff9c9c;
+    color: rgb(37, 33, 33);
+    width: 75%;
+}
+
+.card:hover {
+    background-color: darkcyan;
+    opacity: 1;
+    transition: 0.7s ease;
+    border: 5px solid rgb(37, 33, 33);
+}
+
+#surfreport {
+    background-image: url(../../assets/images/surfreport.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#ledwall {
+    background-image: url(../../assets/images/ledwall.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#calculator {
+    background-image: url(../../assets/images/calculator.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#pastelpuzzles {
+    background-image: url(../../assets/images/pastelpuzzles.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#runbuddy {
+    background-image: url(../../assets/images/runningbuddy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#contactmodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contactmodes li {
+    padding-inline: 20px;
+    line-height: 2;
+    color: rgb(37, 33, 33);
+}
+
+#contactmodes ul a {
+    color: rgb(37, 33, 33);
+}
+
+#contactmodes a:hover {
+    color: #ff9c9c;
+    background-color: rgb(37, 33, 33)
+}
+
+#contactmodes a:visited {
+    color: rgb(37, 33, 33);
+}
+
+#contactmodes a:hover {
+    color: #ff9c9c;
+}
+
+#contactmodes li:hover {
+    color: #ff9c9c;
+    background-color: rgb(37, 33, 33)
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color:rgb(37, 33, 33);
+    border-top: 8px #ff9c9c solid;
+    border-bottom: 3px #ff9c9c solid;
+    color: #ff9c9c;
+    line-height: 1.5;
+}
+
+/* ANIMATION FOR LOGO:HOVER */
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    #logo-and-menu {
+        display: flex;
+        flex-direction:row;
+        width: auto;
+        margin: 0;
+        padding: 0px;
+    }
+    nav {
+        margin:0;
+        padding:0;
+        justify-self: center;
+        justify-content: center;
+        padding-top: 8px;
+    }
+}
