@@ -183,32 +183,32 @@ main {
     border: 5px solid rgb(37, 33, 33);
 }
 
-#surfreport {
-    background-image: url(../../assets/images/surfreport.jpg);
+#speedrunspectator {
+    background-image: url(../../assets/images/speedrun-bg-sonic.png);
     background-position: center;
     background-size: cover;
 }
 
-#ledwall {
-    background-image: url(../../assets/images/ledwall.png);
+#weatherdashboard {
+    background-image: url(../../assets/images/weather.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#calculator {
-    background-image: url(../../assets/images/calculator.png);
+#workdayplanner {
+    background-image: url(../../assets/images/planner.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#pastelpuzzles {
-    background-image: url(../../assets/images/pastelpuzzles.jpg);
+#codequiz {
+    background-image: url(../../assets/images/matrix.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#runbuddy {
-    background-image: url(../../assets/images/runningbuddy.jpg);
+#passwordgenerator {
+    background-image: url(../../assets/images/password.jpg);
     background-position: center;
     background-size: cover;
 }
