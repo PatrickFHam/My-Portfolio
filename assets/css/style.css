@@ -43,6 +43,14 @@ header img:hover {
     animation: bounce 1s;
 }
 
+p {
+    margin-bottom: 8px;
+}
+
+p.indent {
+    text-indent: 30px;
+}
+
 #logo-and-menu {
     display: flex;
     flex-direction:row;
